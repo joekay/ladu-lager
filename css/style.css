@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Nexa;
+    src: url('NexaLight.otf') format("opentype");
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url('NexaBold.otf') format("opentype");
+    font-weight: bold;
+}
+
+.jumbotron {
+
+    position: relative;
+    background: #000 url('../images/tree.jpg') center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden; 
+}
+
+.jumbotron h1{
+  text-align:center;
+  font-family: Nexa;
+  font-size: 35px;
+}
+
+.jumbotron2{
+  text-align:center;
+  background-color: #bdbbbb;
+  font-family: Nexa;
+  font-size: 35px;
+}
+
+.jumbotronpadda{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.padda{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.containercolor{
+background: rgb(189, 187, 187); 
+    background: rgba(189, 187, 187, .5);
+}
+
+.containercolor2{
+background-color: #ffffff;
+}
+
+h3{
+  text-align:center;
+  font-family: Nexa;
+}
+
+.kontakt{
+  background-color: #bdbbbb;
+}
+
+.rubrikomoss{
+  font-family: Nexa;
+  font-size: 27px;
+  color: #ec6937;
+  padding-top: 30px;
+}
+
+.rubrikkontakt{
+ color: #716258;
+}
+
+.infotext{
+  font-family: Nexa;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #716258;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.topp {
+  padding-top: 160px;
+}
+
+
+// Class
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Usage as a mixin
+.element {
+  @include center-block;
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px; /* negative value of footer height */
+  height: 180px;
+  clear:both;
+} 
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Nexa;
+  color: #dbdddd;
+  font-size: 20px;
+  background: #ec6937;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-foot {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-brand {
+  color: #716258;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #716258;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #716258;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #eae7e3;
+}
+.navbar-default .navbar-toggle {
+  border-color: #eae7e3;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #eae7e3;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #716258;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #716258;
+}
+.navbar-default .navbar-link {
+  color: #716258;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #716258;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  h1{
+    font-size: 26px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #eae7e3;
+  }
+  .topp {
+  padding-top: 110px;
+  }
+  .containercolor{
+  background-color: transparent;
+  }
+  .containercolor2{
+  background-color: transparent;
+  }
+} 
+
+}
