@@ -1,9 +1,7 @@
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-}
 
-$(window).scroll(function(e){
-    parallax();
-});
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );

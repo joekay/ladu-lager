@@ -10,9 +10,18 @@
   <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <script src="script.js"></script>
   <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  asdasd-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+</script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ladulås Lager</title>
 
@@ -35,10 +44,10 @@
       </div>
       <div class="collapse navbar-collapse navbar-right" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">BOKA</a></li>
-          <li><a href="#">OM OSS</a></li>
-          <li><a href="#">KONTAKT</a></li>
-          <li><a href="#">VILLKOR</a></li>
+          <li class="active"><a href="lista.html">BOKA</a></li>
+          <li><a href="#omoss" class="scroll">OM OSS</a></li>
+          <li><a href="#kontakt" class="scroll">KONTAKT</a></li>
+          <li><a href="#kontakt" class="scroll">VILLKOR</a></li>
         </ul>
       </div>
     </div>
@@ -67,6 +76,7 @@
     <div class="row">
       <div class="col-sm-2"></div>
       <div class="col-sm-8">
+        <a id="omoss"></a>
         <p align="center" class="rubrikomoss"><b>Om oss</b></p>
         <p class="infotext">Om företaget, vad vi gör, vart vi finns, vår vision osv. There are many variations of passages of
           Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
@@ -94,6 +104,7 @@
 <div class="row jumbotronpadda">
    <div class="col-sm-3"></div>
       <div class="col-sm-6 containercolor2">
+        <a id="kontakt"></a>
         <p align="center" class="rubrikomoss rubrikkontakt"><b>Kontakt</b></p>
         <div class="row">
           <div class="col-sm-6">

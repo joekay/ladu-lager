@@ -14,7 +14,7 @@
 <meta charset=utf-8 />
 <title>JS Bin</title>
 </head>
-<body>
+<body class="lista">
  
 <nav class="navbar navbar-default">
   <div class="container">
@@ -28,50 +28,69 @@
     </div>
     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
       <ul class="nav navbar-nav">
-          <li class="active"><a href="#">BOKA</a></li>
-          <li><a href="#">OM OSS</a></li>
-          <li><a href="#">KONTAKT</a></li>
-          <li><a href="#">VILLKOR</a></li>
+          <li><a href="lista.html">BOKA</a></li>
+          <li><a href="#omoss" class="scroll">OM OSS</a></li>
+          <li><a href="#kontakt" class="scroll">KONTAKT</a></li>
+          <li><a href="#kontakt" class="scroll">VILLKOR</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container containercolor2">
+<div class="container">
 
 <div class="row">
-<div class="col-sm-8"></div>
+   <div class="col-sm-12 containercolor2">
+    <h2>Boka utrymme</h2>
+  </div>
+</div>
 </div>
 
-<div class="container bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
+<div class="container">
 
 <div class="row">
-  <div class="col-sm-12"></div>
-</div>
-
-
-  
-<div class="navbar navbar navbar-fixed-bottom">
-
-  <div class="container">
-    <p class = "navbar-text pull-left">Hej!</p>
+   <div class="col-sm-4 containercolor2">
+    Stad:<br> <input type="text" name="text">
+  </div>
+     <div class="col-sm-4 containercolor2">
+    Typ av rum: <br> <input type="text" name="text">
+  </div>
+     <div class="col-sm-4 containercolor2">
+    Storlek: <br> <input type="text" name="text">
   </div>
 </div>
+</div>
+
+<div class="container text-center">    
+  <div class="row kontakt">
+    <div class="col-sm-3 col-xs-6">
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <button class="listbutton">Boka</button>
+    </div>
+    <div class="col-sm-3 col-xs-6"> 
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <button class="listbutton">Boka</button>
+    </div>
+    <div class="col-sm-3 col-xs-6"> 
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <button class="listbutton">Boka</button>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <button class="listbutton">Boka</button>
+    </div>
+  </div>
+</div>
+
+
 
 </body>
+
+    <footer class="footer  navbar-fixed-bottom">
+      <div class="container">
+        <p>Ladulås Förrådshotell<br>© 2016</p>
+      </div>
+    </footer>
+
+
 </html>
